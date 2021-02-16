@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/portada"
+    tools:context=".MainActivity">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="450sp"
+        android:gravity="center"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#60C6ED"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:text="Nombre"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:backgroundTint="#D300BCD4"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10sp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20sp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#51B9E8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvEdad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:text="Edad"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEdad"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="35sp"
+                android:layout_weight="1"
+                android:backgroundTint="#D300BCD4"
+                android:ems="10"
+                android:paddingLeft="10sp"
+                android:textSize="18sp"
+                android:numeric="integer"
+                android:inputType="number"/>
+            <!--- para que sólo permita poner números usamos las dos ultimas propiedades -->
+
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="140sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="140sp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#43ABE1"
+            android:text="@string/entrar"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+
+</TableLayout>

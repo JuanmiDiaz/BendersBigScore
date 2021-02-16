@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BendersBigScore</string>
+    <string name="entrar">Entrar</string>
+    <string name="jugador">Jugador</string>
+    <string name="jugar">JUGAR</string>
+    <string name="todo">TODO</string>
+</resources>
